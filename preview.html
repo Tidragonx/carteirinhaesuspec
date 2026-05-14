@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Carteirinha SUS</title>
+    <link rel="stylesheet" href="preview.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="panel">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">e-SUS</p>
+            <h1>Gerador de Carteirinha SUS</h1>
+          </div>
+          <button id="printButton" class="primary-button" type="button">Imprimir / Salvar PDF</button>
+        </div>
+
+        <div class="editor-grid">
+          <form id="editorForm" class="editor-form">
+            <label>
+              <span>Nome</span>
+              <input name="nome" type="text">
+            </label>
+            <label>
+              <span>Nome social</span>
+              <input name="nomeSocial" type="text">
+            </label>
+            <label>
+              <span>Nome da mae</span>
+              <input name="nomeMae" type="text">
+            </label>
+            <label>
+              <span>Data de nascimento</span>
+              <input name="dataNascimento" type="text">
+            </label>
+            <label>
+              <span>CPF</span>
+              <input name="cpf" type="text">
+            </label>
+            <label>
+              <span>CNS</span>
+              <input name="cns" type="text">
+            </label>
+            <label>
+              <span>Sexo</span>
+              <input name="sexo" type="text">
+            </label>
+            <label>
+              <span>Telefone</span>
+              <input name="telefone" type="text">
+            </label>
+            <label>
+              <span>Endereco</span>
+              <input name="endereco" type="text">
+            </label>
+            <label>
+              <span>Numero</span>
+              <input name="numero" type="text">
+            </label>
+            <label>
+              <span>Bairro</span>
+              <input name="bairro" type="text">
+            </label>
+            <label>
+              <span>Municipio</span>
+              <input name="municipio" type="text">
+            </label>
+            <label>
+              <span>UF</span>
+              <input name="uf" type="text">
+            </label>
+            <label>
+              <span>CEP</span>
+              <input name="cep" type="text">
+            </label>
+            <label>
+              <span>Complemento</span>
+              <input name="complemento" type="text">
+            </label>
+            <label>
+              <span>Unidade responsavel</span>
+              <input name="unidadeResponsavel" type="text">
+            </label>
+          </form>
+
+          <section class="preview-stage">
+            <div class="cards-stack">
+              <figure class="card-preview">
+                <canvas id="frontCanvas" width="380" height="239"></canvas>
+                <figcaption>Frente</figcaption>
+              </figure>
+              <figure class="card-preview">
+                <canvas id="backCanvas" width="380" height="239"></canvas>
+                <figcaption>Verso</figcaption>
+              </figure>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+    <script src="preview.js"></script>
+  </body>
+</html>

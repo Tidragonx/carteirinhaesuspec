@@ -1,0 +1,10 @@
+dist/
+
+# Arquivos locais de referencia que nao precisam ir para o GitHub
+PEC.html
+sus.pdf
+extracted/obj_3_380x239.png
+
+# Arquivos do sistema
+Thumbs.db
+.DS_Store

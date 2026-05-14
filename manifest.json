@@ -1,0 +1,52 @@
+{
+  "manifest_version": 3,
+  "name": "Gerador Carteirinha SUS e-SUS",
+  "version": "1.0.0",
+  "description": "Adiciona um botao no e-SUS para gerar e imprimir a carteirinha do SUS a partir dos dados do cadastro.",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "host_permissions": [
+    "https://esus.prefeituradearuja.sp.gov.br/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://esus.prefeituradearuja.sp.gov.br/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "preview.html",
+        "preview.css",
+        "preview.js",
+        "extracted/obj_3.png",
+        "extracted/obj_8.png"
+      ],
+      "matches": [
+        "https://esus.prefeituradearuja.sp.gov.br/*"
+      ]
+    }
+  ],
+  "action": {
+    "default_title": "Gerador Carteirinha SUS e-SUS",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    }
+  }
+}
